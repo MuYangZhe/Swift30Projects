@@ -40,14 +40,14 @@ struct Artist {
                 let name = artistJson["name"] as? String
                 let bio = artistJson["bio"] as? String
                 let imageName = artistJson["image"] as? String
-                let wortsObject = artistJson["work"] as? [[String:Any]]
+                let wortsObject = artistJson["works"] as? [[String:Any]]
                 var works:[Work] = []
                 for workObject in wortsObject! {
                     let title = workObject["title"] as? String
                     let workImage = workObject["image"] as? String
                     let info = workObject["info"] as? String
                     
-                    let work = Work(title: title, image: UIImage.init(named: workImage!), info: info)
+                    let work = Work(title: title, image: UIImage.init(named: workImage!), info: info ,isExpanded:false)
                     works.append(work)
                 }
                 

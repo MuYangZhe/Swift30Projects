@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C8BAA3D1F15C027008FE846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA3C1F15C027008FE846 /* AppDelegate.swift */; };
-		0C8BAA3F1F15C027008FE846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA3E1F15C027008FE846 /* ViewController.swift */; };
 		0C8BAA421F15C027008FE846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BAA401F15C027008FE846 /* Main.storyboard */; };
 		0C8BAA451F15C027008FE846 /* Artistry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA431F15C027008FE846 /* Artistry.xcdatamodeld */; };
 		0C8BAA471F15C027008FE846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BAA461F15C027008FE846 /* Assets.xcassets */; };
@@ -18,6 +17,10 @@
 		0C8BAA6E1F15ECFD008FE846 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BAA6D1F15ECFD008FE846 /* artists.json */; };
 		0C8BAA721F15F5A4008FE846 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA711F15F5A4008FE846 /* Artist.swift */; };
 		0C8BAA741F15F617008FE846 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA731F15F617008FE846 /* Work.swift */; };
+		0C8BAA791F171832008FE846 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA781F171832008FE846 /* ArtistTableViewCell.swift */; };
+		0C8BAA7E1F171B9F008FE846 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA7D1F171B9F008FE846 /* ArtistListViewController.swift */; };
+		0C8BAA801F175E9D008FE846 /* WorksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA7F1F175E9D008FE846 /* WorksListViewController.swift */; };
+		0C8BAA821F175F02008FE846 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BAA811F175F02008FE846 /* WorkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 /* Begin PBXFileReference section */
 		0C8BAA391F15C027008FE846 /* Artistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8BAA3C1F15C027008FE846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C8BAA3E1F15C027008FE846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C8BAA411F15C027008FE846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C8BAA441F15C027008FE846 /* Artistry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Artistry.xcdatamodel; sourceTree = "<group>"; };
 		0C8BAA461F15C027008FE846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,10 @@
 		0C8BAA6D1F15ECFD008FE846 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 		0C8BAA711F15F5A4008FE846 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		0C8BAA731F15F617008FE846 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		0C8BAA781F171832008FE846 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
+		0C8BAA7D1F171B9F008FE846 /* ArtistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
+		0C8BAA7F1F175E9D008FE846 /* WorksListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorksListViewController.swift; sourceTree = "<group>"; };
+		0C8BAA811F175F02008FE846 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				0C8BAA3C1F15C027008FE846 /* AppDelegate.swift */,
-				0C8BAA3E1F15C027008FE846 /* ViewController.swift */,
+				0C8BAA7C1F1718E6008FE846 /* ViewController */,
+				0C8BAA771F17125E008FE846 /* Views */,
 				0C8BAA701F15F58F008FE846 /* Model */,
 				0C8BAA6F1F15ED02008FE846 /* Resources */,
 				0C8BAA401F15C027008FE846 /* Main.storyboard */,
@@ -151,6 +158,24 @@
 				0C8BAA731F15F617008FE846 /* Work.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		0C8BAA771F17125E008FE846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BAA781F171832008FE846 /* ArtistTableViewCell.swift */,
+				0C8BAA811F175F02008FE846 /* WorkTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0C8BAA7C1F1718E6008FE846 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BAA7D1F171B9F008FE846 /* ArtistListViewController.swift */,
+				0C8BAA7F1F175E9D008FE846 /* WorksListViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,11 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8BAA821F175F02008FE846 /* WorkTableViewCell.swift in Sources */,
 				0C8BAA451F15C027008FE846 /* Artistry.xcdatamodeld in Sources */,
-				0C8BAA3F1F15C027008FE846 /* ViewController.swift in Sources */,
 				0C8BAA741F15F617008FE846 /* Work.swift in Sources */,
 				0C8BAA3D1F15C027008FE846 /* AppDelegate.swift in Sources */,
+				0C8BAA791F171832008FE846 /* ArtistTableViewCell.swift in Sources */,
 				0C8BAA721F15F5A4008FE846 /* Artist.swift in Sources */,
+				0C8BAA801F175E9D008FE846 /* WorksListViewController.swift in Sources */,
+				0C8BAA7E1F171B9F008FE846 /* ArtistListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
